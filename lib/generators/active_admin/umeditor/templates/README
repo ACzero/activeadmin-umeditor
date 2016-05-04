@@ -1,0 +1,5 @@
+===============================================================================
+this generator copy the required plugins of umeditor,
+you can place them to other place if you like,
+but do not forget to config the UMEDITOR_HOME_URL.
+===============================================================================
