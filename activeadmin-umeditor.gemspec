@@ -6,7 +6,7 @@ require "active_admin/umeditor/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "activeadmin-umeditor"
-  s.version     = Activeadmin::Umeditor::VERSION
+  s.version     = ActiveAdmin::Umeditor::VERSION
   s.authors     = ["ACzero"]
   s.email       = ["lzh.scut@hotmail.com"]
   s.homepage    = "https://github.com/ACzero/activeadmin-umeditor"

@@ -1,5 +1,3 @@
-module Activeadmin
-  module Umeditor
-    # Your code goes here...
-  end
-end
+require 'active_admin/umeditor/config'
+require 'active_admin/umeditor/version'
+require 'active_admin/umeditor/engine'
