@@ -1,5 +1,5 @@
 # Activeadmin::Umeditor
-integrate umeditor with activeadmin, it do not support image upload yet(still working on it) 
+integrate [umeditor](http://ueditor.baidu.com/website/umeditor.html) with activeadmin, it do not support image upload yet(still working on it) 
 
 ## Installation
 
@@ -34,7 +34,7 @@ ActiveAdmin.register Article do
 end
 ```
 
-if you can set a default value by this way:
+you can set a default value by this way:
 
 ```ruby
 f.input :content, input_html: { value: 'default content' }
