@@ -1,4 +1,5 @@
 $(function(){
-    window.um = UM.getEditor('container',
-      <%= ActiveAdmin::Umeditor.configration.umeditor_config.to_json %>);
+    window.UMEDITOR_CONFIG = <%= ActiveAdmin::Umeditor.configration.umeditor_config.to_json %>
+
+    window.um = UM.getEditor('container');
 });

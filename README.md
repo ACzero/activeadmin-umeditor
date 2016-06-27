@@ -1,5 +1,5 @@
 # Activeadmin::Umeditor
-integrate [umeditor](http://ueditor.baidu.com/website/umeditor.html) with activeadmin, it do not support image upload yet(still working on it) 
+integrate [umeditor](http://ueditor.baidu.com/website/umeditor.html) with activeadmin, it do not support image upload yet(still working on it)
 
 ## Installation
 
@@ -16,7 +16,7 @@ rails generate active_admin:umeditor
 ```
 this command will copy the umeditor's plugin files to your public folder, umeditor will load them when it is instantiated,
 you can place them to the server you like, but don't forget to change to `UMEDITOR_HOME_URL` in configure
-
+(PS: the default UMEDITOR_HOME_URL is "/active_admin/umeditor/", and umeditor will request the plugins in "public" folder)
 ## Usage
 
 just specify the `as` option of your` input`:
@@ -28,7 +28,7 @@ ActiveAdmin.register Article do
       f.input :title
       f.input :content, as: :um_editor
     end
-    
+
     f.actions
   end
 end

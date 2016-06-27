@@ -2,4 +2,6 @@
 this generator copy the required plugins of umeditor,
 you can place them to other place if you like,
 but do not forget to config the UMEDITOR_HOME_URL.
+(PS: the default UMEDITOR_HOME_URL is "/active_admin/umeditor/",
+and umeditor will request the plugins in "public" folder)
 ===============================================================================
