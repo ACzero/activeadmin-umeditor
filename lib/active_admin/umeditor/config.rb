@@ -21,8 +21,8 @@ module ActiveAdmin
         {
           state: "SUCCESS",
           url: image_path,
-          title: title,
-          original: original
+          name: title,
+          originalName: original
         }
       end
 
