@@ -29,7 +29,7 @@ module ActiveAdmin
         file.write(uploaded_file.read)
         file.close
 
-        ActiveAdmin::Umeditor.image_url_base + "/" + saved_name
+        ActiveAdmin::Umeditor.upload_config.image_url_base + "/" + saved_name
       end
 
       def file_ext(file_name)
@@ -46,11 +46,15 @@ module ActiveAdmin
       end
 
       def save_directory
-        ActiveAdmin::Umeditor.image_save_path
+        ActiveAdmin::Umeditor.upload_config.image_save_path
       end
 
       def image_url(path)
-        request.protocol + request.host_with_port + "/" + path
+        if ActiveAdmin::Umeditor.upload_config.set_prefix?
+          ActiveAdmin::Umeditor.upload_config.image_url_prefix + path
+        else
+          request.protocol + request.host_with_port + "/" + path
+        end
       end
     end
   end
