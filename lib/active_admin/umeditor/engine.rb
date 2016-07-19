@@ -5,8 +5,7 @@ module ActiveAdmin
 
       initializer "umeditor.add_assets_path", group: :all do |app|
         app.config.assets.precompile += [
-          'active_admin/umeditor.js',
-          'active_admin/umeditor.css'
+          'active_admin/*'
         ]
 
         ActiveAdmin.setup do |config|
